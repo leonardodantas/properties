@@ -1,34 +1,3 @@
-spring:
-  application:
-    data:
-      mongodb:
-        authentication-database: admin
-        username: leonardo
-        password: 123456
-        database: rank-list
-        port: 27017
-        host: 127.0.0.1
-    swagger:
-      title: '@name@'
-      description: '@description@'
-      version: '@version@'
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
-  kafka:
-    topics:
-      create.product: create-product-topic
-    producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: com.product.stock.config.serializers.ProductSerializer
-    consumer:
-      group-id: product-stock
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: com.product.stock.config.serializers.ProductDeserializer
-
-application:
-  code:
-    header: "APP-PRODUCT-STOCK-JAVA"
-
-url:
-  review: http://localhost:8081/review
+database:
+  mongo:
+    active: false
