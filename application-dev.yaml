@@ -1,3 +1,0 @@
-database:
-  mongo:
-    active: false
