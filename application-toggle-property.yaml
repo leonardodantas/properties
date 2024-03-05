@@ -22,4 +22,4 @@ spring:
     driverClassName: org.postgresql.Driver
 database:
   mongo:
-    active: false
+    active: true
