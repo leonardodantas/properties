@@ -4,3 +4,19 @@ spring:
       matching-strategy: ant_path_matcher
   application:
     name: app-feature-toggle-java
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: "mongodb://leonardo:123456@localhost:27017/featureToggle?authSource=admin"
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/featureToggle
+    username: leonardo
+    password: 123456
+  database:
+    driverClassName: org.postgresql.Driver
