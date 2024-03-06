@@ -1,0 +1,28 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  application:
+    name: app-feature-toggle-java
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: "mongodb://leonardo:123456@localhost:27017/featureToggle?authSource=admin"
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/featureToggle
+    username: leonardo
+    password: 123456
+  database:
+    driverClassName: org.postgresql.Driver
+unleash:
+  appName: app-feature-toggle-unleash-java
+  instanceId: app-feature-toggle-java
+  unleashAPI: http://localhost:4242/api
+  apiKey: default:development.a6ca0c8371fb20169cbadc11ea501996ec3200251f0e18fe083dbdde
+  synchronousFetchOnInitialisation: true
