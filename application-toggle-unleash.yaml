@@ -21,9 +21,8 @@ spring:
   database:
     driverClassName: org.postgresql.Driver
 unleash:
-  appName: app-feature-toggle-unleash-java
-  instanceId: app-feature-toggle-java
-  unleashAPI: http://localhost:4242/api
-#  apiKey: "default:development.a6ca0c8371fb20169cbadc11ea501996ec3200251f0e18fe083dbdde"
-  apiKey: teste
-  synchronousFetchOnInitialisation: true
+  app-name: app-feature-toggle-unleash-java
+  instance-id: app-feature-toggle-java
+  unleash-api: http://localhost:4242/api
+  api-key: "default:development.a6ca0c8371fb20169cbadc11ea501996ec3200251f0e18fe083dbdde
+  synchronous-fetch-on-initialisation: true
