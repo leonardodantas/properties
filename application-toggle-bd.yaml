@@ -7,7 +7,7 @@ spring:
   data:
     mongodb:
       auto-index-creation: true
-      uri: "mongodb://leonardo:123456@localhost:27017/bankBalance?authSource=admin"
+      uri: "mongodb://leonardo:123456@localhost:27017/featureToggle?authSource=admin"
   jpa:
     database: POSTGRESQL
     show-sql: true
@@ -15,7 +15,7 @@ spring:
       ddl-auto: update
   datasource:
     platform: postgres
-    url: jdbc:postgresql://localhost:5432/bankBalance
+    url: jdbc:postgresql://localhost:5432/featureToggle
     username: leonardo
     password: 123456
   database:
