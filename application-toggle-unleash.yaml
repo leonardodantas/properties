@@ -24,5 +24,6 @@ unleash:
   appName: app-feature-toggle-unleash-java
   instanceId: app-feature-toggle-java
   unleashAPI: http://localhost:4242/api
-  apiKey: "default:development.a6ca0c8371fb20169cbadc11ea501996ec3200251f0e18fe083dbdde"
+#  apiKey: "default:development.a6ca0c8371fb20169cbadc11ea501996ec3200251f0e18fe083dbdde"
+  apiKey: teste
   synchronousFetchOnInitialisation: true
