@@ -1,9 +1,9 @@
 spring:
+  application:
+    name: app-feature-toggle-java
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
-  application:
-    name: app-feature-toggle-java
   data:
     mongodb:
       auto-index-creation: true
